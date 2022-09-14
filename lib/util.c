@@ -1,20 +1,10 @@
 #include "util.h"
 
-void swap(int* a, int* b) {
-  int temp = *b;
-  *a = *b;
-  *b = temp;
-}
+#include <stdio.h>
 
-void bubble_sort(int* a, int size) {
-  for(int j = 0; j < size; j++) {
-    for(int i = 0; i < size-1; i++) {
-      if(a[i] > a[i+1])
-        swap(&a[i], &a[i+1]);
-    }
+void max_print(void* array, size_t size, size_t typeBytes) {
+  for(size_t i = 0; i < size; i++) {
+    printf("%d ", *(int*)(array+(i*typeBytes)));
   }
-}
-
-void bubble_sort_n(int *a, int size) {
-
+  printf("\n");
 }
