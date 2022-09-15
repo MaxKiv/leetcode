@@ -9,12 +9,12 @@ struct ListNode {
   struct ListNode *next;
 };
 
-int printList(struct ListNode* node) {
-  if(node == NULL) {
-    return 1;
+void printList(struct ListNode* node) {
+  while(node != NULL) {
+    printf("%d ", node->val);
+    node = node->next;
   }
-  printf("%d ", node->val);
-  return printList(node->next);
+  printf("\n");
 }
 
 #endif

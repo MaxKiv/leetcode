@@ -2,4 +2,4 @@
 
 struct ListNode;
 
-extern int printList(struct ListNode* node);
+extern void printList(struct ListNode* node);
