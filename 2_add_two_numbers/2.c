@@ -5,12 +5,12 @@
 #include "util.h"
 #include "ListNode.h"
 
- /* /1* Definition for singly-linked list. *1/ */
- /* struct ListNode { */
- /*     int val; */
- /*     struct ListNode *next; */
- /* }; */
-
+/* Definition for singly-linked list.
+ struct ListNode {
+     int val;
+     struct ListNode *next;
+ };
+*/
 
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
   int combined[101] = {-1};

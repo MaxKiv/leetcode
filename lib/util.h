@@ -1,3 +1,5 @@
+#include "util.c"
+
 #include <stddef.h>
 
 extern void max_print(void* array, size_t size, size_t typeBytes);

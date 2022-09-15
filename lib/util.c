@@ -1,4 +1,5 @@
-#include "util.h"
+#ifndef UTIL
+#define UTIL
 
 #include <stdio.h>
 
@@ -8,3 +9,5 @@ void max_print(void* array, size_t size, size_t typeBytes) {
   }
   printf("\n");
 }
+
+#endif
