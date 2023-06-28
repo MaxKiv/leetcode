@@ -16,3 +16,16 @@ impl Solution {
     }
 }
 
+pub struct Solution;
+
+#[cfg(test)]
+mod tests {
+
+    #[test]
+    fn it_works() {
+        use crate::Solution;
+        let result = Solution::fizz_buzz(15);
+        let correct = vec!["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"];
+        assert_eq!(result, correct);
+    }
+}
